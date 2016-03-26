@@ -16,7 +16,7 @@ makeCacheMatrix <- function (X = matrix()){
   list(set = set, get = get, setinvers = setinvers, getinvers = getinvers)
 }
 
-## cacheSolve returns the inverse of a (invertible) matrix. First the function first looks up if the inverse has already been computed.
+## cacheSolve returns the inverse of a (invertible) matrix. First the function looks up if the inverse has already been computed.
 ## If so, the before calculated value. If not, it computes the inverse, then stores by calling the setinvers() function and finally returns the inverse.
 
 cacheSolve <- function(X, ...){
